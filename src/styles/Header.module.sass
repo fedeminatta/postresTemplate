@@ -1,0 +1,39 @@
+@import './Variables'
+
+.header
+    display: flex
+    justify-content: space-between
+    gap: 30px
+    flex-flow: row wrap
+    padding: 30px
+    font-weight: 600
+    button
+        font-weight: 600
+        background: none
+        border: none
+        cursor: pointer
+        &:hover, &:active
+            color: $orange
+    div
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        gap: 15px
+        span
+            border: 3px solid $orange
+            padding: 8px 10px
+            color: $orange
+        a
+            text-decoration: none
+            color: #000
+            &:hover, &:active
+                color: $orange
+    .loginBtn
+        border: solid 2px #000
+        background: $green
+        box-shadow: -4px 4px 0 $orange
+        padding: 8px 16px
+        transition: all .3s
+        &:hover
+            box-shadow: -1px 1px 0 $orange
+            color: #000
